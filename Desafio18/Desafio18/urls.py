@@ -24,7 +24,7 @@ urlpatterns = [
     path('formulario/', homeView.formulario, name="formularioPrueba"),
     path('modformulario/', homeView.mod_formulario, name="modificarFormulario"),
     path ('Usuario/', homeView.mod_formulario2, name="BuscarUsuario"),
-    path ('registrarAlumno/', FormularioFamiliarView.index, name = "RegistrarFamiliar" ),
-    path ('guardarAlumno/', FormularioFamiliarView.procesar_formulario, name= "guardarFamiliar"),
+    path ('registrarFamiliar/', FormularioFamiliarView.index, name = "RegistrarFamiliar" ),
+    path ('guardarFamiliar/', FormularioFamiliarView.procesar_formulario, name= "guardarFamiliar"),
     path ('ListarFamilia/', FormularioFamiliarView.listar_familiar, name="listar"),
 ]
