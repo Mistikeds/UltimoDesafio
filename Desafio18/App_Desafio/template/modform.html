@@ -1,0 +1,11 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <center><h1>Modificar Usuario</h1></center>
+    <div class="mb-3">
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Documento del usuario que desea modificar">
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-warning" href="{% url 'BuscarUsuario' %}">Buscar Usuario</button>
+    </div>
+{% endblock %}

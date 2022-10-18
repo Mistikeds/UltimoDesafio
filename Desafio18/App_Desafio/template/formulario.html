@@ -1,0 +1,43 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<center><h1> Formulario de registro</h1></center>
+    <div class="row g-3">
+        <div class="col">
+        <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+        </div>
+        <div class="col">
+        <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+        </div>
+    </div><br>
+    <form class="row g-3">
+
+        <div class="col-md-6">
+        <input type="email" class="form-control" placeholder="Email" >
+        </div>
+
+        <div class="col-md-6">
+        <input type="number" class="form-control" placeholder="Documento">
+        </div>
+
+        <div class="col-12">
+        <input type="text" class="form-control" placeholder="Direccion">
+        </div>
+
+        <div class="col-12">
+            <input type="date">
+        </div>
+
+        <div class="col-12">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+            Soy un humano no binario
+            </label>
+        </div>
+        </div>
+        <div class="col-12">
+        <button type="submit" class="btn btn-primary">Cargar</button>
+        </div>
+    </form>
+{% endblock %}
