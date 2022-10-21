@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'App_Desafio.apps.AppDesafioConfig',
-    'crispy_forms',
+    'crispy_forms', # pip instal django-crispy-forms
     
 ]
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -58,8 +58,7 @@ ROOT_URLCONF = 'Desafio18.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:/Users/johan/Desktop/Django/Proyecto/Desafio18/App_Desafio', 
-                'C:/Users/johan/Desktop/Django/Proyecto/Desafio18/App_Desafio/template'],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

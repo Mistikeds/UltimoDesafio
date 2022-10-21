@@ -11,5 +11,12 @@ class familiar(models.Model):
     def __str__(self):
       return f"{self.nombre}, {self.apellido},{self.documento},{self.email}, {self.direccion},{self.fecha_nacimiento}, {self.id}"
 
-
+class Buscar(familiar, models.Model):
+  
+ """ documento = models.IntegerField()
+  
+  def __str__(self):
+      return f"{self.nombre}, {self.apellido},{self.documento},{self.email}, {self.direccion},{self.fecha_nacimiento}, {self.id}"""
+  
+  
 

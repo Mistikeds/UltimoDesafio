@@ -13,7 +13,7 @@ from App_Desafio.models import familiar
 class homeView():
 
     def home(self):
-        plantilla = get_template('template/index.html')
+        plantilla = get_template('index.html')
         return HttpResponse(plantilla.render())
     
     def formulario(self):
@@ -43,7 +43,10 @@ class FormularioFamiliarView(HttpRequest):
 
     def listar_familiar(request): #devolver datos de la db
         familiares = familiar.objects.all()
-        return render(request,'template/listados.html', {"familiares": familiares})
+        return render(request,'listados.html', {"familiares": familiares})
+
+class buscando(HttpRequest):
+    pass
 
 
 
