@@ -20,7 +20,8 @@ from App_Desafio.views import homeView, FormularioFamiliarView
 
 
 urlpatterns = [
-    path('', homeView.home, name="Pestaña_Principal"),
+    path('admin/', admin.site.urls),
+    path('',homeView.home, name="Pestaña_Principal"),
     path('formulario/', homeView.formulario, name="formularioPrueba"),
     path('modformulario/', homeView.mod_formulario, name="modificarFormulario"),
     path ('Usuario/', homeView.mod_formulario2, name="BuscarUsuario"),

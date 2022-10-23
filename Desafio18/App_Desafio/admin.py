@@ -1,3 +1,4 @@
 from django.contrib import admin
+from App_Desafio.models import familiar
 
-# Register your models here.
+admin.site.register(familiar)

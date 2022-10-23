@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'App_Desafio.apps.AppDesafioConfig',
-    'crispy_forms', # pip instal django-crispy-forms
+    'crispy_forms', # pip install django-crispy-forms
     
 ]
 CRISPY_TEMPLATE_PACK = 'bootstrap4'

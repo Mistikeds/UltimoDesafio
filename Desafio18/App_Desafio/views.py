@@ -5,9 +5,7 @@ from django.urls import is_valid_path
 from django.http import HttpRequest, HttpResponse
 from django.template.loader import get_template
 from App_Desafio.forms import FormularioFamiliar
-from App_Desafio.models import familiar
-
-
+from App_Desafio.models import familiar, Configuracion
 
 
 class homeView():
@@ -30,8 +28,12 @@ class homeView():
 
 class FormularioFamiliarView(HttpRequest):
 
+    def index_2(request):
+        configuracion = Configuracion.objects.first()
+        return render(request, 'index.html', {'configuracion': configuracion} )
+
     def index(request):
-        familiar= FormularioFamiliar()
+        familiar = FormularioFamiliar()
         return render(request, "UsuarioIndex.html", {"form":familiar})
 
     def procesar_formulario(request):
