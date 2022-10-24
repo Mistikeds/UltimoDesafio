@@ -6,6 +6,37 @@
     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Documento del usuario que desea modificar">
     </div>
     <div class="col-12">
-        <button type="submit" class="btn btn-warning" href="{% url 'BuscarUsuario' %}">Buscar Usuario</button>
+        <!-- <button type="submit" class="btn btn-warning col-md-3" href="{% url 'BuscarUsuario' %}">Buscar Usuario</button> -->
+        <a class="btn btn-warning col-md-3" href="{% url 'modificarFormulario' %}">Buscar Usuario</a>
     </div>
+    <p></p>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Documento</th>
+            <th scope="col">Email/Correo</th>
+            <th scope="col">Direccion</th>
+            <th scope="col">Nacimiento</th>
+            <th scope="col">Editar</th>
+            <th scope="col">Eliminar</th>
+        </tr>
+        </thead>
+        <tbody class="table-group-divider">
+    
+       <!-- 
+            <tr>
+                <th scope="row">{{ user.id }}</th>
+                <td>{{ user.nombre}}</td>
+                <td>{{ user.apellido }}</td>
+                <td>{{ user.documento }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.direccion }}</td>
+                <td>{{ user.fecha_nacimiento }}</td>
+                <td><a class="btn btn-warning" href="#">Editar</a></td>
+                <td><a class="btn btn-danger" href="#">Eliminar</a></td>
+            </tr>
+        -->
 {% endblock %}

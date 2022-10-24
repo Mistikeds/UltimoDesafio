@@ -9,17 +9,12 @@ class familiar(models.Model):
     direccion = models.CharField(max_length=200)
     fecha_nacimiento= models.DateField()
 
+class buscar(familiar):
+
 
 
     def __str__(self):
       return f"{self.nombre}, {self.apellido},{self.documento},{self.email}, {self.direccion},{self.fecha_nacimiento}, {self.id}"
-
-class Buscar(familiar, models.Model):
-  
- """ documento = models.IntegerField()
-  
-  def __str__(self):
-      return f"{self.nombre}, {self.apellido},{self.documento},{self.email}, {self.direccion},{self.fecha_nacimiento}, {self.id}"""
 
 class Configuracion(models.Model):
     nombre_blog = models.CharField(max_length=20)

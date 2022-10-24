@@ -48,6 +48,7 @@ class FormularioFamiliarView(HttpRequest):
         return render(request,'listados.html', {"familiares": familiares})
 
 class buscando(HttpRequest):
+    
     pass
 
 

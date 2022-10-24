@@ -4,16 +4,18 @@
 
 {% block content %}
 
-    {% if form.error %}
-        <div class="alert alert-danger" role="alert">
-            Error! intente nuevamente.
-        </div>
-    {% endif %}
+    
         <h1>Registro de usuario</h1>
         <form action="{% url 'guardarFamiliar' %}" method="post">
 
-            {% csrf_token %}
-            {% if mensaje %}
+        {% csrf_token %}
+        {% if form.errors %}
+            <div class="alert alert-danger" role="alert">
+            Error! intente nuevamente.
+            </div>
+        {% endif %}
+            
+            {% if not form.errors %}
                 <div class="alert alert-success" role="alert">
                     Usuario cargado con exito!
                 </div>
